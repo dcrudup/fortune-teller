@@ -7,36 +7,52 @@ public class FortuneTeller {
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("What is your first name?");
-		String firstname = input.nextLine();
+		String firstName = input.nextLine();
 
 		System.out.println("What is your last name?");
-		String lastname = input.nextLine();
+		String lastName = input.nextLine();
 
-		System.out.println("Hello " + firstname + " " + lastname + "." + " How old are you?");
-		int age = input.nextInt();
+		System.out.println("Hello " + firstName + " " + lastName + "." + " How old are you?");
+		int currentAge = input.nextInt();
 
-		System.out.println("In which month were you born?");
-		int birthmonth = input.nextInt();
+		System.out.println("In which month were you born? Please enter the month using a number 1-12.");
+		int birthMonth = input.nextInt();
 
-		System.out.println("What is your favorite ROYGBIV color?");
+		System.out.println(
+				"Please enter one of the ROYGBIV colors. If you're not sure which colors are ROYGBIV, please enter the word, help");
 		String roygbiv = input.next();
 
-		String red = "red";
+		if (roygbiv.equalsIgnoreCase("red")) {
+			System.out.println("Maserati");
 
-		if (red.equals("red")) {
-			System.out.println("Like an apple.");
+		} else if (roygbiv.equalsIgnoreCase("orange")) {
+			System.out.println("stallion");
+
+		} else if (roygbiv.equalsIgnoreCase("yellow")) {
+			System.out.println("chariot");
+
+		} else if (roygbiv.equalsIgnoreCase("green")) {
+			System.out.println("taxi");
+
+		} else if (roygbiv.equalsIgnoreCase("blue")) {
+			System.out.println("rickshaw");
+
+		} else if (roygbiv.equalsIgnoreCase("indigo")) {
+			System.out.println("motor scooter");
+
+		} else if (roygbiv.equalsIgnoreCase("violet")) {
+			System.out.println("flying saucer");
+
+		} else if (roygbiv.equalsIgnoreCase("Help")) {
+			System.out.println("Red; Orange; Yellow; Green; Blue; Indigo; Violet");
+
+			System.out.println(
+					"Please enter one of the ROYGBIV colors. If you're not sure which colors are ROYGBIV, please enter the word, help");
+			roygbiv = input.next();
+			System.out.println("Thank you.");
 		}
-		
-		String orange = "orange";
-		
-		(orange.equals(orange)) {
-			System.out.println("Like an orange.");
-		}
-		String yellow = "yellow";
-		  (yellow.equals(yellow));
 
 		input.close();
-
 	}
 
 }
