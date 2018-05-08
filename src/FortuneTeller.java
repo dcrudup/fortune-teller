@@ -107,7 +107,7 @@ public class FortuneTeller {
 		}
 
 		input.close();
-		
+
 		System.out.println("");
 
 		System.out.println(firstName + " " + lastName + " " + "will retire in " + retirementNumber + " "
